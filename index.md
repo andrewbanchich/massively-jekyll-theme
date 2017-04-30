@@ -1,3 +1,7 @@
+---
+layout: home
+title: homepage
+---
 <!DOCTYPE HTML>
 <!--
 	Massively by HTML5 UP
