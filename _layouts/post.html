@@ -1,36 +1,35 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <!--
-	Forty by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
+	   Massively by HTML5 UP
+	   html5up.net | @ajlkn
+	   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+   -->
 <html>
 
-{% include head.html %}
+    {% include head.html %}
 
-<body>
+	  <body class="is-loading">
 
-    {% include header.html %} 
-    
-    
-<!-- Main -->
-<div id="main" class="alt">
+        {% include header.html %}
 
-<!-- One -->
-<section id="one">
-	<div class="inner">
-		<header class="major">
-			<h1>{{ page.title }}</h1>
-		</header>
-		{% if page.image %}<span class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></span>{% endif %}
-		<p>{{ content }}</p>
-	</div>
-</section>
+				<!-- Post -->
+				<section class="post">
+						<header class="major">
+								<span class="date">April 25, 2017</span>
+								<h1>This is a<br />
+									  Generic Page</h1>
+								<p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
+									  facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
+									  amet nullam sed etiam veroeros.</p>
+						</header>
+						<div class="image main"><img src="assets/images/pic01.jpg" alt="" /></div>
 
-</div>
+            {{ content }}
 
-    {% include footer.html %}
+				</section>
 
-</body>
+        {% include footer.html %}
+
+    </body>
 
 </html>
