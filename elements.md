@@ -3,13 +3,6 @@ layout: page
 title: Elements Reference
 ---
 
-<!-- Post -->
-<section class="post">
-  <header class="major">
-      <h1>Elements<br />
-      Reference</h1>
-  </header>
-
   <!-- Text stuff -->
       <h2>Text</h2>
       <p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
@@ -389,5 +382,3 @@ i++;
 
 print 'It took ' + i + ' iterations to sort the deck.';
 </code></pre>
-
-   </section>
