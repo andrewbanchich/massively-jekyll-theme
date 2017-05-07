@@ -1,7 +1,7 @@
 		</div>
 
 		<!-- Footer -->
-		<footer id="footer">
+		<footer id="footer" action="https://formspree.io/{{ site.email }}" method="POST">
 				<section>
 						<form method="post" action="#">
 								<div class="field">
@@ -10,7 +10,7 @@
 								</div>
 								<div class="field">
 									  <label for="email">Email</label>
-									  <input type="text" name="email" id="email" />
+									  <input type="text" name="_replyto" id="email" />
 								</div>
 								<div class="field">
 									  <label for="message">Message</label>

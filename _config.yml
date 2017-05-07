@@ -13,7 +13,7 @@ zip_code: 55555
 country: United States of America
 phone: (716) 555-5555
 
-paginate: 5
+#paginate: 5
 
 # gems
 # gems:
