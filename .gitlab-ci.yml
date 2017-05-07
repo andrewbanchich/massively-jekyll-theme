@@ -5,10 +5,10 @@ pages:
   script:
   - gem install jekyll jekyll-paginate
   - jekyll build -d public
-  - gem build massively_jekyll_theme.gemspec
+  # - gem build massively_jekyll_theme.gemspec
   artifacts:
     paths:
     - public
-    - "massively_jekyll_theme-*.gem"
+    # - "massively_jekyll_theme-*.gem"
   only:
   - master
