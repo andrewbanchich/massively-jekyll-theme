@@ -16,8 +16,8 @@ phone: (716) 555-5555
 paginate: 5
 
 # gems
-gems:
-  - jekyll-paginate
+# gems:
+#   - jekyll-paginate
 
 # social settings
 500px_url:
