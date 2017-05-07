@@ -1,7 +1,7 @@
 ---
 layout: psot
 title: Elements Reference
-----
+---
 
 <!DOCTYPE HTML>
 <!--
