@@ -25,8 +25,7 @@
 									  facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
 									  amet nullam sed etiam veroeros.</p>
 						</header>
-						<div class="image main"><img src="{{ post.image }}" alt="" /></div>
-
+            {% if page.image %}<div class="image main"><img src="{{ site.baseurl }}/{{ page.image }}" alt="" /></div>{% endif %}
             {{ content }}
 
 				</section>
