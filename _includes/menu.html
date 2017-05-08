@@ -1,3 +1,4 @@
+{% assign current_page = page.url %}
 
 <!-- Nav -->
 <nav id="nav">
@@ -10,7 +11,7 @@
 		         {% endfor %} -->
 		    {% for page in site.pages %}
 		    {% if page.layout != "home" %}
-		    <li><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
+		    <li{% if current_page = page.url %} class="active"{% endif %}><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
 		    {% endif %}
 		    {% endfor %}
 		</ul>
