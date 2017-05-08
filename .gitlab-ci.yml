@@ -3,7 +3,7 @@ image: ruby:2.3
 pages:
   stage: build
   script:
-  - gem install jekyll #jekyll-paginate
+  - gem install jekyll jekyll-paginate-v2
   - jekyll build -d public
   - gem build massively_jekyll_theme.gemspec
   artifacts:
