@@ -3,12 +3,11 @@
 <!-- Nav -->
 <nav id="nav">
 		<ul class="links">
-				<li{% if current_page == "" | absolute_url %} class="active"{% endif %}><a href="{{ '' | absolute_url }}">This is Massively</a></li>
-        <!-- {% for page in site.pages %}
-		         {% if page.layout == "home" %}
-		         <li><a href="{{ "" | absolute_url }}">{{ page.title }}</a></li>
-	    	     {% endif %}
-		         {% endfor %} -->
+        {% for page in site.pages %}
+		    {% if page.layout == "home" %}
+		    <li{% if current_page == page.url %} class="active"{% endif %}><a href="{{ "" | absolute_url }}">{{ page.title }}</a></li>
+	    	{% endif %}
+		    {% endfor %}
 		    {% for page in site.pages %}
 		    {% if page.layout != "home" %}
 		    <li{% if current_page == page.url %} class="active"{% endif %}><a href="{{ page.url | absolute_url }}">{{ page.title }}</a></li>
