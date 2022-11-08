@@ -1,7 +1,7 @@
 # site settings
-title: Massively
-subtitle: by HTML5 UP
-email: youremailaddress@gmail.com
+title: Francisco Caldas 
+subtitle: PhD Student at NOVA School of Science and Technology
+email: f.caldas@campus.fct.unl.pt
 description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
 baseurl: "/massively-jekyll-theme" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
