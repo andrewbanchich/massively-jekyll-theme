@@ -28,7 +28,7 @@ twitter_url: https://twitter.com/andrewbanchich
 # build settings
 markdown: kramdown
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "fcaldas.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 sass:
   style: compressed
