@@ -1,0 +1,89 @@
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer" action="https://formspree.io/{{ site.email }}" method="POST">
+				<section>
+						<form method="post" action="#">
+								<div class="field">
+									  <label for="name">Name</label>
+									  <input type="text" name="name" id="name" />
+								</div>
+								<div class="field">
+									  <label for="email">Email</label>
+									  <input type="text" name="_replyto" id="email" />
+								</div>
+								<div class="field">
+									  <label for="message">Message</label>
+									  <textarea name="message" id="message" rows="3"></textarea>
+								</div>
+								<ul class="actions">
+									  <li><input type="submit" value="Send Message" /></li>
+								</ul>
+						</form>
+				</section>
+				<section class="split contact">
+						<section class="alt">
+								<h3>Address</h3>
+								<p>{{ site.street_address }}<br />
+								    {{ site.city }}, {{ site.state }} {{ site.zip_code }}</p>
+						</section>
+						<section>
+								<h3>Phone</h3>
+								<p><a href="#">{{ site.phone }}</a></p>
+						</section>
+						<section>
+								<h3>Email</h3>
+								<p><a href="#">{{ site.email }}</a></p>
+						</section>
+						<section>
+								<h3>Social</h3>
+								<ul class="icons alt">
+										{% if site.twitter_url %}
+				            <li><a href="{{ site.twitter_url }}" class="icon alt fa-twitter" target="_blank"><span class="label">Twitter</span></a></li>
+				            {% endif %}
+				            {% if site.googleplus_url %}
+				            <li><a href="{{ site.googleplus_url }}" class="icon alt fa-google-plus" target="_blank"><span class="label">Google+</span></a></li>
+				            {% endif %}
+				            {% if site.facebook_url %}
+				            <li><a href="{{ site.facebook_url }}" class="icon alt fa-facebook" target="_blank"><span class="label">Facebook</span></a></li>
+				            {% endif %}
+				            {% if site.instagram_url %}
+				            <li><a href="{{ site.instagram_url }}" class="icon alt fa-instagram" target="_blank"><span class="label">Instagram</span></a></li>
+				            {% endif %}
+				            {% if site.pinterest_url %}
+				            <li><a href="{{ site.pinterest_url }}" class="icon alt fa-pinterest" target="_blank"><span class="label">Pinterest</span></a></li>
+				            {% endif %}
+				            {% if site.500px_url %}
+				            <li><a href="{{ site.500px_url }}" class="icon alt fa-500px" target="_blank"><span class="label">500px</span></a></li>
+				            {% endif %}
+				            {% if site.gitlab_url %}
+				            <li><a href="{{ site.gitlab_url }}" class="icon alt fa-gitlab" target="_blank"><span class="label">GitLab</span></a></li>
+				            {% endif %}
+				            {% if site.github_url %}
+				            <li><a href="{{ site.github_url }}" class="icon alt fa-github" target="_blank"><span class="label">GitHub</span></a></li>
+				            {% endif %}
+				            {% if site.slack_url %}
+				            <li><a href="{{ site.slack_url }}" class="icon alt fa-slack" target="_blank"><span class="label">Slack</span></a></li>
+				            {% endif %}
+				            {% if site.linkedin_url %}
+				            <li><a href="{{ site.linkedin_url }}" class="icon alt fa-linkedin" target="_blank"><span class="label">LinkedIn</span></a></li>
+				            {% endif %}
+                </ul>
+						</section>
+				</section>
+		</footer>
+
+		<!-- Copyright -->
+		<div id="copyright">
+				<ul><li>&copy; {{ site.title }}</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li><li>Jekyll integration: <a href="http://andrewbanchi.ch">Andrew Banchich</a></li></ul>
+		</div>
+
+		</div>
+
+		<!-- Scripts -->
+		<script src="{{ "assets/js/jquery.min.js" | absolute_url }}"></script>
+		<script src="{{ "assets/js/jquery.scrollex.min.js" | absolute_url }}"></script>
+		<script src="{{ "assets/js/jquery.scrolly.min.js" | absolute_url }}"></script>
+		<script src="{{ "assets/js/skel.min.js" | absolute_url }}"></script>
+		<script src="{{ "assets/js/util.js" | absolute_url }}"></script>
+		<script src="{{ "assets/js/main.js" | absolute_url }}"></script>

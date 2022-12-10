@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<!--
+	   Massively by HTML5 UP
+	   html5up.net | @ajlkn
+	   Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+   -->
+<html>
+
+    {% include head.html %}
+
+	  <body class="is-loading">
+
+        <!-- Wrapper -->
+        <div id="wrapper" class="fade-in">
+
+            {% include intro.html %}
+            {% include header.html %}
+            {% include menu.html %}
+
+				    <!-- Featured Post -->
+				    <article class="post featured">
+						    <header class="major">
+								    <span class="date">April 25, 2017</span>
+								    <h2><a href="#">And this is a<br />
+									      massive headline</a></h2>
+								    <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
+									      facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
+									      amet nullam sed etiam veroeros.</p>
+						    </header>
+						    <a href="#" class="image main"><img src="assets/images/pic01.jpg" alt="" /></a>
+						    <ul class="actions">
+								    <li><a href="#" class="button big">Full Story</a></li>
+						    </ul>
+				    </article>
+
+            {% if site.posts != null %}
+
+				    <!-- Posts -->
+				    <section class="posts">
+	              {% for post in site.posts %}
+						    <article>
+								    <header>
+										    <span class="date">{{ post.date | date: "%B %-d, %Y" }}</span>
+										<h2><a href="{{ post.url  | relative_url }}">{{ post.title }}</a></h2>
+								</header>
+								<a href="{{ post.url  | relative_url }}" class="image fit"><img src="{{ post.image }}" alt="" /></a>
+								<p>{{ post.excerpt }}</p>
+								<ul class="actions">
+										<li><a href="{{ post.url  | relative_url }}" class="button">Full Story</a></li>
+								</ul>
+						</article>
+	          {% endfor %}
+				</section>
+
+
+        <!-- Footer -->
+        <footer>
+		        <div class="pagination">
+				        <!--<a href="#" class="previous">Prev</a>-->
+				        <a href="#" class="page active">1</a>
+				        <a href="#" class="page">2</a>
+				        <a href="#" class="page">3</a>
+				        <span class="extra">&hellip;</span>
+				        <a href="#" class="page">8</a>
+				        <a href="#" class="page">9</a>
+				        <a href="#" class="page">10</a>
+				        <a href="#" class="next">Next</a>
+		        </div>
+
+            <!-- This loops through the paginated posts -->
+            <!-- {% for post in paginator.posts %}
+                 <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+                 <p class="author">
+                 <span class="date">{{ post.date }}</span>
+                 </p>
+                 <div class="content">
+                 {{ post.content }}
+                 </div>
+                 {% endfor %} -->
+
+            <!-- Pagination links -->
+            <!-- <div class="pagination">
+                 {% if paginator.previous_page %}
+                 <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+                 {% else %}
+                 <span class="previous">Previous</span>
+                 {% endif %}
+                 <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+                 {% if paginator.next_page %}
+                 <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+                 {% else %}
+                 <span class="next ">Next</span>
+                 {% endif %}
+                 </div>
+               -->
+        </footer>
+
+{% endif %}
+
+        {% include footer.html %}
+
+    </body>
+
+</html>
