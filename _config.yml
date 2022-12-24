@@ -1,32 +1,54 @@
 # site settings
-title: Massively
-subtitle: by HTML5 UP
-email: youremailaddress@gmail.com
-description: A responsive site template designed by HTML5 Up<br /> and released under the Creative Commons.
-baseurl: "/massively-jekyll-theme" # the subpath of your site, e.g. /blog
+title: SammyCoRuns
+first_name: Sam
+middle_name: R.
+last_name: Cohen
+subtitle:
+email: sacohen11s@gmail.com
+description: My own site designed by HTML5 Up<br /> and released under the Creative Commons.
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
 author:
-street_address: 1234 Somewhere Road
-city: Nashville
-state: TN
-zip_code: 55555
-country: United States of America
-phone: (716) 555-5555
+street_address: 
+city: 
+state: 
+zip_code: 
+country: 
+phone: 
+footer_text: >
+  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://html5up.net/massively">HTML5 UP's Massively</a> theme, integrated by <a href="https://github.com/andrewbanchich/massively-jekyll-theme">Andrew Banchich</a>.
+  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+last_updated: true # set to true if you want to display last updated in the footer
+impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
+
 
 # social settings
 500px_url:
 facebook_url:
-github_url: https://github.com/andrewbanchich
-gitlab_url: https://gitlab.com/u/andrewbanchich
+github_url: https://github.com/sacohen11
+gitlab_url: 
 googleplus_url:
-instagram_url:
-linkedin_url: https://www.linkedin.com/in/andrew-banchich-a4ba1195
+instagram_url: https://www.instagram.com/sammycoruns/
+linkedin_url: https://www.linkedin.com/in/sam-cohen-1b925b114/
 pinterest_url:
 slack_url:
-twitter_url: https://twitter.com/andrewbanchich
+twitter_url: https://twitter.com/SammyCoRuns
 
 # build settings
 markdown: kramdown
 
 sass:
   style: compressed
+
+# -----------------------------------------------------------------------------
+# Layout
+# -----------------------------------------------------------------------------
+
+navbar_fixed: true
+footer_fixed: true
+
+# Dimensions
+max_width: 800px
+
+# TODO: add layout settings (single page vs. multi-page)
