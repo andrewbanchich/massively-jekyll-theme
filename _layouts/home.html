@@ -17,21 +17,37 @@
             {% include header.html %}
             {% include menu.html %}
 
-				    <!-- Featured Post -->
-				    <article class="post featured">
-						    <header class="major">
-								    <span class="date">April 25, 2017</span>
-								    <h2><a href="#">And this is a<br />
-									      massive headline</a></h2>
-								    <p>Aenean ornare velit lacus varius enim ullamcorper proin aliquam<br />
-									      facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor<br />
-									      amet nullam sed etiam veroeros.</p>
-						    </header>
-						    <a href="#" class="image main"><img src="assets/images/pic01.jpg" alt="" /></a>
-						    <ul class="actions">
-								    <li><a href="#" class="button big">Full Story</a></li>
-						    </ul>
-				    </article>
+				    <!-- About Me -->
+				    
+					<article>
+						{% if page.profile -%}
+						<div class="profile float-{%- if page.profile.align == 'left' -%}left{%- else -%}right{%- endif -%}">
+						  {%- if page.profile.image %}
+							{%- assign profile_image_path = page.profile.image | prepend: 'assets/images/' -%}
+			  
+							{% if page.profile.image_circular %}
+							  {%- assign profile_image_class = "img-fluid z-depth-1 rounded-circle" -%}
+							{% else %}
+							  {%- assign profile_image_class = "img-fluid z-depth-1 rounded" -%}
+							{% endif %}
+			  
+							{% include figure.html 
+							path=profile_image_path 
+							class=profile_image_class
+							alt=page.profile.image -%}
+						  {% endif -%}
+						  {%- if page.profile.address %}
+						  <div class="address">
+							{{ page.profile.address }}
+						  </div>
+						  {%- endif %}
+						</div>
+						{%- endif %}
+			  
+						<div class="clearfix">
+						  {{ content }}
+						</div>
+					</article>			  
 
             {% if site.posts != null %}
 

@@ -51,4 +51,37 @@ footer_fixed: true
 # Dimensions
 max_width: 800px
 
-# TODO: add layout settings (single page vs. multi-page)
+
+# Includes & excludes
+include: ['_pages']
+exclude:
+  - bin
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+keep_files:
+  - CNAME
+  - .nojekyll
+  - .git
+
+# Plug-ins
+# plugins:
+  # - jekyll-archives
+  # - jekyll-diagrams
+  # - jekyll-email-protect
+  # - jekyll-feed
+  # - jekyll-imagemagick
+  # - jekyll-minifier
+  # - jekyll-paginate-v2
+  # - jekyll/scholar
+  # - jekyll-sitemap
+  # - jekyll-link-attributes
+  # - jekyll-twitter-plugin
+  # - jemoji
+
+# Sitemap settings
+defaults:
+  - scope:
+      path: "assets/**/*.*"
+    values:
+      sitemap: false

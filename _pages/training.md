@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Generic Page
-image: assets/images/pic01.jpg
+title: Training
+image: assets/images/bio.png
 description: Aenean ornare velit lacus varius enim ullamcorper proin aliquam facilisis ante sed etiam magna interdum congue. Lorem ipsum dolor amet nullam sed etiam veroeros.
 ---
 

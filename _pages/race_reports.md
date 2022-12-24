@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Elements Reference
+title: Race Reports
 ---
 
 <!-- Text stuff -->

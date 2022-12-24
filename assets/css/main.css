@@ -3410,6 +3410,24 @@
 
 		}
 
+/* Profile */
+
+.profile {
+	width: 100%;
+}
+.profile.float-right{
+	margin-left: 1rem;
+}
+.profile.float-left{
+	margin-right: 1rem;
+}
+
+@media (min-width: 576px) {
+	.profile {
+	width: 30%;
+	}
+}
+
 /* Nav */
 
 	#nav {
